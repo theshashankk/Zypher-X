@@ -7,7 +7,7 @@ import os
 import sys
 from telethon.sessions import StringSession
 from telethon import TelegramClient
-from main.zypherConfig import Var
+from System.zypherConfig import Var
 import time
 
 if Var.ZYPHER_SESSION:
