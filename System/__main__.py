@@ -1,5 +1,5 @@
 import glob
-from System import bot
+from System.__init__ import bot
 from sys import argv
 from telethon import TelegramClient
 from System.zypherConfig import Var
