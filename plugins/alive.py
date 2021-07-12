@@ -20,4 +20,9 @@ async def omkvai(event):
   omk_caption += (
         f"**©️ CopyRight By** ☞ [𝚉𝚈𝙿𝙷𝙴𝚁 𝚇](https://github.com/Mdnoor786/Zypher-X)\n\n"
     )
+  omk_button = [[Button.url("Zypher User", f"https://t.me/{bot.me.username}")]]
+  omk_button += [[Button.url("Zypher Support", "t.me/ZypherSupport"), Button.url("Zypher Updates", "t.me/teamzypher")]]
+  omk_button += [[custom.Button.inline("Deploy Zypher", data="omkd")]]
   await tgbot.send_file(event.chat_id, captions=omk_caption) 
+
+  #OR BAAD ME KARUNGA 
