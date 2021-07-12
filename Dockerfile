@@ -1,13 +1,17 @@
 FROM python:3.9.2-slim-buster
 
 
-RUN mkdir /app
-RUN chmod 777 /app
-WORKDIR /app
+RUN mkdir app
+COPY . /app
+
+ENV  PYTHONPATH "${PYTHONPATH}:/app"
 
 RUN apt -qq update
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata
+
+COPY . .
+
 RUN apt update && apt upgrade -y && apt install --no-install-recommends -y \
         debian-keyring \
         debian-archive-keyring \
