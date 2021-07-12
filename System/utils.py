@@ -1,6 +1,6 @@
 import sys
 import math
-from Lion import bot
+from System import bot
 from telethon import events
 from pathlib import Path
 from System.zypherConfig import Var, Config
@@ -90,7 +90,7 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        import Lion.utils
+        import System.utils
         import importlib
         path = Path(f"plugins/{shortname}.py")
         name = "plugins.{}".format(shortname)
