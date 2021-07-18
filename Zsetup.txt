@@ -67,3 +67,4 @@ opencv-python-headless
 glitch_this
 numpy
 fontTools
+shashankxD==0.0.2
